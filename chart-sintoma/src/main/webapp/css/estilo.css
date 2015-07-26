@@ -1,0 +1,37 @@
+body {
+    font-family: Verdana, "Verdana CE",  Arial, "Arial CE", "Lucida Grande CE", lucida, "Helvetica CE", sans-serif;
+    font-size: 12px;
+    line-height: 1.88889;
+    color: #555753;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+h1{
+    font-size: 16px;
+}
+
+div{
+    text-align: center;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#titulo{
+
+}
+
+div#texto{
+
+}
+
+div#grafico{
+
+}
+canvas{
+    width: 800px;
+    height: 400px;
+}
