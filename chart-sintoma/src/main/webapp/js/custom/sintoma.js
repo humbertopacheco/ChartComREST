@@ -15,12 +15,12 @@ var CONSERPRO_SINTOMAS = {
             url: "http://localhost:8080/chart-sintoma-rest/rest/service/execute",
             dataType: "json",
             method: "get",
-            success: function (studentJsonData) {
+            success: function (sintomaJsonData) {
 
-                console.log(studentJsonData);
+                console.log(sintomaJsonData);
 
-                $.each(studentJsonData, function (index, aStudent) {
-                    formattedstudentListArray.push([aStudent.mathematicsMark, aStudent.computerMark, aStudent.historyMark, aStudent.litratureMark, aStudent.geographyMark]);
+                $.each(sintomaJsonData, function (index, sintoma) {
+                    formattedstudentListArray.push([sintoma.qtdeCasosJaneiro, sintoma.qtdeCasosFevereiro, sintoma.qtdeCasosMarco, sintoma.qtdeCasosAbril, sintoma.qtdeCasosMaio, sintoma.qtdeCasosJunho]);
                 });
             }
         });
