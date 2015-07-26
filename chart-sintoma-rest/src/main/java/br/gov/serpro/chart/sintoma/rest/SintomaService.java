@@ -25,8 +25,6 @@ public class SintomaService {
     @Path("/verify/{param}")
     @Produces(MediaType.TEXT_PLAIN)
     public Response verify(@PathParam("param") String msg) {
-        System.out.println("Executando o Get do Servico");
-
         String output = "Jersey responde : " + msg;
 
         return Response.status(200).entity(output).build();
@@ -37,13 +35,12 @@ public class SintomaService {
     @Path("execute")
     @Produces(MediaType.APPLICATION_JSON)
     public List<Sintoma> execute() {
-        System.out.println("Executando o Post do Servico");
 
         List<Sintoma> sintomas = new ArrayList<>();
 
-        sintomas.add(new Sintoma("Tosse", 5, 10, 10, 20, 5));
+        sintomas.add(new Sintoma("Tosse", 5, 10, 10, 20, 5, 3));
 
-        sintomas.add(new Sintoma("Febre Alta", 2, 200, 10, 5, 3));
+        sintomas.add(new Sintoma("Febre Alta", 2, 200, 10, 5, 3, 10));
 
         return sintomas;
 

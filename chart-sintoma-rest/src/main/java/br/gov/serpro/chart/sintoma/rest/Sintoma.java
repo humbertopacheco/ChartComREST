@@ -11,80 +11,133 @@ package br.gov.serpro.chart.sintoma.rest;
  */
 public class Sintoma {
 
-    private String name;
-    private int computerMark;
-    private int mathematicsMark;
-    private int geographyMark;
-    private int historyMark;
-    private int litratureMark;
+    private String nome;
+    private int qtdeCasosJaneiro;
+    private int qtdeCasosFevereiro;
+    private int qtdeCasosMarco;
+    private int qtdeCasosAbril;
+    private int qtdeCasosMaio;
+    private int qtdeCasosJunho;
 
     public Sintoma() {
 
     }
 
-    public Sintoma(String name, int computerMark, int mathematicsMark, int geographyMark, int historyMark, int litratureMark) {
-        this.name = name;
-        this.computerMark = computerMark;
-        this.mathematicsMark = mathematicsMark;
-        this.geographyMark = geographyMark;
-        this.historyMark = historyMark;
-        this.litratureMark = litratureMark;
-    }
-
-    public int getLitratureMark() {
-        return litratureMark;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setComputerMark(int i) {
-        this.computerMark = i;
-    }
-
-    public void setMathematicsMark(int i) {
-        this.mathematicsMark = i;
-    }
-
-    public void setGeographyMark(int i) {
-        this.geographyMark = i;
-    }
-
-    public void setHistoryMark(int i) {
-        this.historyMark = i;
-    }
-
-    public void setLitratureMark(int i) {
-        this.litratureMark = i;
-    }
-
-    public int getComputerMark() {
-        return computerMark;
-    }
-
-    public int getGeographyMark() {
-        return geographyMark;
-    }
-
-    public int getHistoryMark() {
-        return historyMark;
-    }
-
-    public int getMathematicsMark() {
-        return mathematicsMark;
-    }
-
-    public String getName() {
-        return name;
+    public Sintoma(String nome, int qtdeCasosJaneiro, int qtdeCasosFevereiro, int qtdeCasosMarco, int qtdeCasosAbril, int qtdeCasosMaio, int qtdeCasosJunho) {
+        this.nome = nome;
+        this.qtdeCasosJaneiro = qtdeCasosJaneiro;
+        this.qtdeCasosFevereiro = qtdeCasosFevereiro;
+        this.qtdeCasosMarco = qtdeCasosMarco;
+        this.qtdeCasosAbril = qtdeCasosAbril;
+        this.qtdeCasosMaio = qtdeCasosMaio;
+        this.qtdeCasosJunho = qtdeCasosJunho;
     }
 
     @Override
     public String toString() {
-        return new StringBuffer(" First Name : ").append(this.name)
-                .append(" Last Name : ").append(this.computerMark)
-                .append(" Age : ").append(this.geographyMark).append(" ID : ")
-                .append(this.litratureMark).toString();
+
+        StringBuilder sb = new StringBuilder(0);
+        sb.append("Nome : ").append(this.getNome()).append("\n");
+
+        return sb.toString();
+    }
+
+    /**
+     * @return the nome
+     */
+    public String getNome() {
+        return nome;
+    }
+
+    /**
+     * @param nome the nome to set
+     */
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    /**
+     * @return the qtdeCasosJaneiro
+     */
+    public int getQtdeCasosJaneiro() {
+        return qtdeCasosJaneiro;
+    }
+
+    /**
+     * @param qtdeCasosJaneiro the qtdeCasosJaneiro to set
+     */
+    public void setQtdeCasosJaneiro(int qtdeCasosJaneiro) {
+        this.qtdeCasosJaneiro = qtdeCasosJaneiro;
+    }
+
+    /**
+     * @return the qtdeCasosFevereiro
+     */
+    public int getQtdeCasosFevereiro() {
+        return qtdeCasosFevereiro;
+    }
+
+    /**
+     * @param qtdeCasosFevereiro the qtdeCasosFevereiro to set
+     */
+    public void setQtdeCasosFevereiro(int qtdeCasosFevereiro) {
+        this.qtdeCasosFevereiro = qtdeCasosFevereiro;
+    }
+
+    /**
+     * @return the qtdeCasosMarco
+     */
+    public int getQtdeCasosMarco() {
+        return qtdeCasosMarco;
+    }
+
+    /**
+     * @param qtdeCasosMarco the qtdeCasosMarco to set
+     */
+    public void setQtdeCasosMarco(int qtdeCasosMarco) {
+        this.qtdeCasosMarco = qtdeCasosMarco;
+    }
+
+    /**
+     * @return the qtdeCasosAbril
+     */
+    public int getQtdeCasosAbril() {
+        return qtdeCasosAbril;
+    }
+
+    /**
+     * @param qtdeCasosAbril the qtdeCasosAbril to set
+     */
+    public void setQtdeCasosAbril(int qtdeCasosAbril) {
+        this.qtdeCasosAbril = qtdeCasosAbril;
+    }
+
+    /**
+     * @return the qtdeCasosMaio
+     */
+    public int getQtdeCasosMaio() {
+        return qtdeCasosMaio;
+    }
+
+    /**
+     * @param qtdeCasosMaio the qtdeCasosMaio to set
+     */
+    public void setQtdeCasosMaio(int qtdeCasosMaio) {
+        this.qtdeCasosMaio = qtdeCasosMaio;
+    }
+
+    /**
+     * @return the qtdeCasosJunho
+     */
+    public int getQtdeCasosJunho() {
+        return qtdeCasosJunho;
+    }
+
+    /**
+     * @param qtdeCasosJunho the qtdeCasosJunho to set
+     */
+    public void setQtdeCasosJunho(int qtdeCasosJunho) {
+        this.qtdeCasosJunho = qtdeCasosJunho;
     }
 
 }
